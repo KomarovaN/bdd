@@ -42,4 +42,19 @@ public class TransferTest {
     }
 
 
+    @Test
+    public void shouldInvalidTransferFromFirstToNonexistent () {
+        DataHelper.CardInfo cardFirst = DataHelper.getFirstCardInfo();
+        DataHelper.CardInfo cardSecond = DataHelper.getSecondCardInfo();
+        int balanceFirst = dashboardPage.getCardBalance(cardFirst);
+        int balanceSecond = dashboardPage.getCardBalance(cardSecond);
+        int amount = DataHelper.getValidAmount(balanceFirst);
+        TransferPage transferPage = dashboardPage.selectCardForTransfer(cardSecond);
+        transferPage.makeTransfer(String.valueOf(amount), DataHelper.getNonexistentCardInfo());
+        transferPage.findErrorMessage("Выберите карту списания из Ваших существующих");
+        int actualBalanceFirst = dashboardPage.getCardBalance(cardFirst);
+        int actualBalanceSecond = dashboardPage.getCardBalance(cardSecond);
+        assertEquals (balanceFirst, actualBalanceFirst);
+        assertEquals (balanceSecond, actualBalanceSecond);
+    }
 }

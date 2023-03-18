@@ -19,9 +19,8 @@ public class DashboardPage {
     }
 
     public int getCardBalance(DataHelper.CardInfo cardInfo) {
-        // TODO: перебрать все карты и найти по атрибуту data-test-id
-        String text = cards.findBy(text(cardInfo.getCardNumber().substring(15))).getText();
-        return extractBalance(text);
+       String text = cards.findBy(text(cardInfo.getCardNumber().substring(15))).getText();
+       return extractBalance(text);
     }
 
     public TransferPage selectCardForTransfer (DataHelper.CardInfo cardInfo) {
