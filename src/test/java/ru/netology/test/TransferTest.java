@@ -51,7 +51,7 @@ public class TransferTest {
         int amount = DataHelper.getValidAmount(balanceFirst);
         TransferPage transferPage = dashboardPage.selectCardForTransfer(cardSecond);
         transferPage.makeTransfer(String.valueOf(amount), DataHelper.getNonexistentCardInfo());
-        transferPage.findErrorMessage("Выберите карту списания из Ваших существующих");
+        transferPage.findErrorMessage("Номер карты списания задан неверно. Введите номер карты списания из Ваших существующих");
         int actualBalanceFirst = dashboardPage.getCardBalance(cardFirst);
         int actualBalanceSecond = dashboardPage.getCardBalance(cardSecond);
         assertEquals (balanceFirst, actualBalanceFirst);

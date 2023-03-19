@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3c409d65-5134-4698-a0c3-295049b4f4f5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/data/DataHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/data/DataHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/page/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/page/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/page/TransferPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/page/TransferPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/test/TransferTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/test/TransferTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +58,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_directory_selection": "C:/Users/Asus/IdeaProjects/bdd/src/test/java/ru/netology",
-    "last_opened_file_path": "C:/Users/Asus/IdeaProjects/patterns-tests"
+    "last_opened_file_path": "C:/Users/Asus/IdeaProjects/sql"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
